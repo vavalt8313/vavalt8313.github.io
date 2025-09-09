@@ -184,7 +184,7 @@
   border-left: 1px solid rgba(255, 255, 255, .3);
   border-top: 1px solid rgba(255, 255, 255, .3);
 
-  box-shadow: 4px 4px 60px rgba(0, 0, 0, .5);
+  box-shadow: 4px 4px 60px rgba(0, 0, 0, .3);
 }
 
 .jdoodle-container iframe {
@@ -199,5 +199,6 @@
   border: none !important;
   border-radius: 10px;
 }
+
 
 
