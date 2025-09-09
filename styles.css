@@ -86,14 +86,15 @@
 /* === Zone responsive pour intégration JDoodle === */
 .jdoodle-container {
   position: relative;
-  width: 100%;
   padding-bottom: 75%;
+  height: 0;
+  overflow: auto;
+  width: 100%;
   height: auto;
-  max-height: 10px;
+  max-height: 10vh;
   padding: 40vh;
-  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-  border: 1px solid #ffffff;
+  border: 1px solid #005b96;
   background: white;
   margin: 20px 0;
 }
@@ -105,8 +106,11 @@
   width: 100%;
   height: 100%;
   border: none !important;
+  max-height: 10 vh;
+  aspect-ratio: 16 / 9;
   border-radius: 10px;
 }
+
 
 
 
