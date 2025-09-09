@@ -91,7 +91,7 @@
   padding: 40vh;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-  /*background: white;*/
+  background: white;
   margin: 20px 0;
 }
 
@@ -101,6 +101,7 @@
   aspect-ratio: 16 / 9;
   border-radius: 10px;
 }
+
 
 
 
