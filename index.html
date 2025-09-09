@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Documentation – Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="sidebar" class="sidebar">
+    <button class="closebtn" onclick="closeNav()">×</button>
+    <h2>Modules</h2>
+    <a href="module_template.html">C Module</a>
+    <a href="cybersec_module.html">Cybersecurity Module</a>
+    <!-- Add more links as needed -->
+  </div>
+
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">≡ Menu</button>
+    <div class="content">
+      <h1>Welcome to the Docs</h1>
+      <p>This is your documentation home. Select a module from the menu to begin.</p>
+    </div>
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("sidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    function closeNav() {
+      document.getElementById("sidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+</body>
+</html>
