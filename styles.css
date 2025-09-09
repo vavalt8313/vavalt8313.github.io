@@ -91,15 +91,15 @@
   padding: 40vh;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-  background: white;
+  /*background: white;*/
   margin: 20px 0;
 }
 
 .jdoodle-container iframe {
   max-height: 10 vh;
   aspect-ratio: 16 / 9;
-  border: none !important;
   border-radius: 10px;
 }
+
 
 
