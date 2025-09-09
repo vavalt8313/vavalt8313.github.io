@@ -1,0 +1,127 @@
+/* === Reset général === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Styles du menu latéral coulissant et du contenu principal === */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #005b96; /* bleu principal */
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  color: white;
+}
+
+.sidebar h2 {
+  padding: 0 20px 10px;
+}
+
+.sidebar a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: 0.2s;
+  font-size: 18px;
+}
+
+.sidebar a:hover {
+  background-color: #024f7c;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 36px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#main {
+  transition: margin-left 0.3s;
+  padding: 20px;
+  background-color: white;
+  min-height: 100vh;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #005b96;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.code-example {
+  background-color: #f4f4f4;
+  border-left: 4px solid #005b96;
+  padding: 10px;
+  margin: 20px 0;
+  font-family: monospace;
+}
+
+.text-example {
+  margin: 20px 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* === Zone responsive pour intégration JDoodle === */
+.jdoodle-container {
+  position: relative;
+  width: 100%;
+  /* Ratio d’aspect 4:3, si vous préférez 16:9, mettez 56.25% */
+  padding-bottom: 75%;
+  height: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; /* défilement fluide sur mobile */
+  border: 1px solid #005b96;
+  background: white;
+  margin: 20px 0;
+}
+
+.jdoodle-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none !important;
+}
+
+.jdoodle-container {
+  width: 100%;
+  height: auto;
+  max-height: 10px;
+  padding: 40vh;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid #005b96;
+  background: white;
+  margin: 20px 0;
+}
+
+.jdoodle-container iframe {
+  max-height: 10 vh;
+  aspect-ratio: 16 / 9;
+  border: none !important;
+  border-radius: 10px;
+}
+
