@@ -97,9 +97,11 @@
 
 .jdoodle-container iframe {
   max-height: 10 vh;
+  border: none !important;
   aspect-ratio: 16 / 9;
   border-radius: 10px;
 }
+
 
 
 
