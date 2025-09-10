@@ -8,9 +8,10 @@
 <body>
 
   <div id="sidebar" class="sidebar">
-    <button class="closebtn" onclick="closeNav()">×</button>
+    <button class="closebtn" onclick="openNav()">×</button>
     <h2>Modules</h2>
-    <a href="module_template.html">C Module</a>
+    <a href="C_module.html">C Module</a>
+    <a href="typage.html">Typage</a>
     <a href="cybersec_module.html">Cybersecurity Module</a>
     <!-- Add more links as needed -->
   </div>
@@ -24,13 +25,17 @@
   </div>
 
   <script>
+    var isOpen = false;
     function openNav() {
-      document.getElementById("sidebar").style.width = "250px";
-      document.getElementById("main").style.marginLeft = "250px";
-    }
-    function closeNav() {
-      document.getElementById("sidebar").style.width = "0";
-      document.getElementById("main").style.marginLeft = "0";
+      if (!isOpen) {
+        document.getElementById("sidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        isOpen = true;
+      } else {
+        document.getElementById("sidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        isOpen = false;
+      }
     }
   </script>
 </body>

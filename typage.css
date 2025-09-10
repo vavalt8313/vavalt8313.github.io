@@ -1,0 +1,61 @@
+
+.content {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.8;
+  font-size: 18px;
+  color: #222;
+  background-color: #fdfdfd;
+  padding: 10px;
+}
+
+.content h1,
+.content h2,
+.content h3 {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.content h1 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+
+.content h2 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+}
+
+.content h3 {
+  font-size: 1.3rem;
+  color: #005b96;
+}
+
+.content p {
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+.content .code-example {
+  background-color: #f6f8fa;
+  border-left: 5px solid #005b96;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 16px;
+}
+
+.content code {
+  font-family: "Fira Code", monospace;
+  font-size: 15px;
+  color: #333;
+}
+
+.content a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
