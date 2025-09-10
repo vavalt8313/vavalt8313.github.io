@@ -59,3 +59,78 @@
 .content a:hover {
   text-decoration: underline;
 }
+
+.lang-toggle {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  z-index: 2000;
+}
+
+.lang-toggle input {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.slider-container {
+  position: relative;
+  width: 80px;
+  height: 34px;
+  background-color: #ccc;
+  border-radius: 34px;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+.slider-container::before,
+.slider-container::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  pointer-events: none;
+  z-index: 1;
+}
+.slider-container::before {
+  content: "EN";
+  left: 10px;
+}
+.slider-container::after {
+  content: "FR";
+  right: 10px;
+}
+
+.slider-knob {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 26px;
+  height: 26px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.4s;
+  z-index: 2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.lang-toggle input:checked + .slider-container {
+  background-color: #005b96;
+}
+.lang-toggle input:checked + .slider-container .slider-knob {
+  transform: translateX(46px);
+}
+
+#langLabel {
+  margin-left: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #005b96;
+  font-weight: bold;
+}
